@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>it.epicode</groupId>
-	<artifactId>U2J-W4-D1</artifactId>
+	<artifactId>U2J-W3-D5</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>U2J-W3-D5</name>
 	<description>Demo project for Spring Boot</description>
@@ -31,6 +31,38 @@
 	</properties>
 
 	<dependencies>
+		<!-- sicurezza -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.11.5</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.11.5</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- sicurezza -->
 
 		<dependency>
 			<groupId>com.cloudinary</groupId>
@@ -57,7 +89,6 @@
 			<artifactId>javafaker</artifactId>
 			<version>1.0.2</version>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.postgresql</groupId>
